@@ -10,7 +10,7 @@ namespace ConsoleApp1
         private double fajsuly;
 
         public double GetFajsuly {  get { return fajsuly; } }
-        public double Suly { get { return 1; } }
+        public double Suly { get { return base.Terfogat() * this.fajsuly; } }
 
         public TomorHenger(double sugar, double magassag): base(sugar, magassag)
         {
